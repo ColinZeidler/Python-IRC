@@ -8,5 +8,5 @@ s.connect((host,port))
 
 while True:
     c = s.recv(1024)
-    if c != "":
-        print c
+    s.send("Thank you")    
+    print c
