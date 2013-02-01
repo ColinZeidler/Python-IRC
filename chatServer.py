@@ -19,4 +19,5 @@ while True:
     addr_array.append(addr)
     print 'Got connection from', addr
     c.send('Thank you for connecting')
+    print c.recv(1024)
     #s.sendto('test', addr)
